@@ -120,6 +120,22 @@ void Vector::writeToIDX(const char* path) {
 	}
 }
 
+void Vector::bubbleSort() {
+	for (int i = 1; i < dimension; i++) {
+		int swap = false;
+		for (int j = 0; j < dimension - i; j++) {
+			if (data[j] > data[j + 1]) {
+				std::swap(data[j], data[j + 1]);
+				swap = true;
+			}
+		}
+		if (!swap) {
+			return;
+		}
+	}
+	return;
+}
+
 float& Vector::operator[](const int index) {
 	float val = data[index];
 	return val;

@@ -14,6 +14,7 @@ public:
 	void loadFromIDX(const char* path, int index);
 	void loadFromIDX2D(const char* path, int index);
 	void writeToIDX(const char* path);
+	void bubbleSort();
 	float& operator[](const int index);
 	Vector& operator=(const Vector& rhs);
 	Vector& operator+=(const Vector& rhs);
