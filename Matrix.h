@@ -29,5 +29,4 @@ public:
 	friend Matrix operator*(const float& lhs, const Matrix& rhs);
 	Vector operator*(const Vector& rhs);
 	Matrix elementWiseMultiply(const Matrix& rhs);
-	Matrix elementWiseAdd(const Matrix& rhs);
 };

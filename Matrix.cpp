@@ -231,12 +231,3 @@ Matrix Matrix::elementWiseMultiply(const Matrix& rhs) {
 	return out;
 }
 
-Matrix Matrix::elementWiseAdd(const Matrix& rhs) {
-	assert(rows == rhs.rows && columns == rhs.columns);
-	Matrix out(rows, columns);
-	for (int i = 0; i < rows * columns; i++) {
-		out.data[i] = data[i] + rhs.data[i];
-	}
-	return out;
-}
-
